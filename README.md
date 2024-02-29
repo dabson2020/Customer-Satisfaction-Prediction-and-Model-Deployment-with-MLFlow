@@ -6,16 +6,16 @@
 
 The purpose of this repository is to demonstrate how [ZenML](https://github.com/zenml-io/zenml) empowers your business to build and deploy machine learning pipelines in a multitude of ways:
 
-- By offering you a framework and template to base your own work on.
+- By offering a framework and template to base your own work on.
 - By integrating with tools like [MLflow](https://mlflow.org/) for deployment, tracking and more
-- By allowing you to build and deploy your machine learning pipelines easily
+- By building and deploying  machine learning pipelines easily
 
-## :snake: Python Requirements
+## snake: Python Requirements
 
 Let's jump into the Python packages you need. Within the Python environment of your choice, run:
 
 ```bash
-git clone https://github.com/zenml-io/zenml-projects.git
+git clone https://github.com/dabson2020/Customer-Satisfaction-Prediction-and-Model-Deployment-with-MLFlow.git
 cd zenml-projects/customer-satisfaction
 pip install -r requirements.txt
 ```
@@ -47,7 +47,6 @@ zenml stack register mlflow_stack -a default -o default -d mlflow -e mlflow_trac
 
 We had written a blog that explains this project in-depth: [Predicting how a customer will feel about a product before they even ordered it](https://blog.zenml.io/customer_satisfaction/).
 
-If you'd like to watch the video that explains the project, you can watch the [video](https://youtu.be/L3_pFTlF9EQ).
 
 ## :thumbsup: The Solution
 
@@ -63,10 +62,10 @@ In this Project, we give special consideration to the [MLflow integration](https
 
 Our standard training pipeline consists of several steps:
 
-- `ingest_data`: This step will ingest the data and create a `DataFrame`.
+- `ingest_df`: This step will ingest the data and create a `DataFrame`.
 - `clean_data`: This step will clean the data and remove the unwanted columns.
 - `train_model`: This step will train the model and save the model using [MLflow autologging](https://www.mlflow.org/docs/latest/tracking.html).
-- `evaluation`: This step will evaluate the model and save the metrics -- using MLflow autologging -- into the artifact store.
+- `evaluate`: This step will evaluate the model and save the metrics -- using MLflow autologging -- into the artifact store.
 
 ### Deployment Pipeline
 

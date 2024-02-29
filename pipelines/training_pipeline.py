@@ -9,7 +9,7 @@ from steps.evaluate import evaluate_model
 docker_settings = DockerSettings(required_integrations=[MLFLOW])
 
 @pipeline(enable_cache=False, settings={"docker": docker_settings})
-def train_pipeline(data_path: str = "/Users/adeol/Desktop/MLFlow-Project/data/olist_customers_dataset.csv"):
+def train_pipeline(data_path: str = "/home/adeola/mlproject/Customer-Satisfaction-Prediction-and-Model-Deployment-with-MLFlow/data/olist_customers_dataset.csv"):
     """
     The training pipeline
     Args:

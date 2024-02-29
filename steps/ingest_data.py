@@ -22,7 +22,7 @@ class IngestData:
             pandas dataframe
         """
         logging.info(f"Ingesting data from {self.data_path}")
-        return pd.read_csv("/Users/adeol/Desktop/MLFlow-Project/data/olist_customers_dataset.csv")
+        return pd.read_csv("/home/adeola/mlproject/Customer-Satisfaction-Prediction-and-Model-Deployment-with-MLFlow/data/olist_customers_dataset.csv")
     
 @step
 def ingest_df(data_path: str):
